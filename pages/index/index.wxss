@@ -1,0 +1,78 @@
+/**index.wxss**/
+
+/* 设置整体布局为Flex，确保内容垂直居中 */
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 公共模块样式 */
+.module {
+    border: 1px solid #ddd;    /* 模块边框 */
+    padding: 15px;
+    margin-bottom: 20px;    /* 模块间距 */
+    border-radius: 10px;    /* 边框圆角 */
+    background-color: #f9f9f9;    /* 背景颜色 */
+    box-sizing: border-box;
+}
+
+/* 标题样式 */
+.title {
+    font-size: 24px; /* 增大字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    color: #333333; /* 改变字体颜色 */
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* 添加文字阴影 */
+    background-color: #f2f2f2; /* 背景颜色 */
+    padding: 5px 0; /* 上下填充 */
+    border-radius: 5px; /* 轻微的圆角 */
+}
+
+.text_send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 20px;
+}
+
+.text_receive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #333333;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 button {
+    background-color: #ffffff;
+    /* 绿色背景 */
+    border: 2px solid #4CAF50;
+    /* 绿色边框 */
+    border-radius: 5px;
+    /* 圆角边框 */
+    padding: 10px 20px;
+    /* 内边距 */
+    margin: 10px;
+    /* 外边距 */
+    box-shadow: 2px 2px 5px grey;
+    /* 阴影效果 */
+}
+
+/* 设置按钮居中 */
+.tap {
+    display: block;
+    margin: 0 auto;
+}

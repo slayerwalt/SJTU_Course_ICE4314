@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<navigation-bar title="前后端通信测试程序" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+
+<!-- 图片加密文本信息模块 -->
+<view class="module">
+  <view class="title">图片加密文本信息</view>
+  <view class="container1">
+    <button bind:tap="chooseImage">选择JPEG图片</button>
+    <button bind:tap="viewImage">预览图片</button>
+  </view>
+  <view class="text_send">
+    请输入：<input type="text" placeholder="要发送的文本" bindinput="inputChange"></input>
+  </view>
+  <button class="tap" type='primary' bind:tap="sendMessage">确认</button>
+</view>
+
+<!-- 文本信息接受模块 -->
+<view class="module">
+  <view class="title">文本信息接受</view>
+  <view class="text_receive">{{message_receive}}</view>
+  <button class="tap" type='primary' bind:tap="getMessage">接受文本</button>
+</view>
